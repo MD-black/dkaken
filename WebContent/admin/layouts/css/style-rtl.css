@@ -1,0 +1,268 @@
+/*.........................................................................................*/
+/*Start Main Rules*/ 
+/*.........................................................................................*/
+
+.no-data-found{border-right: 20px solid #27ae60;border-left: 0;}
+
+.asterisk{left: 10px;}
+
+.form-group .password{padding-left: 175px;padding-right: 16px;}
+
+.form-group #result{left: 100px;}
+
+.form-group .show-password{left: 35px;}
+
+.success-msg i{padding-left: 5px;}
+
+.fail-msg i{padding-left: 5px;}
+
+.server-errors .alert-danger button{right: 0;}
+
+.client-errors .alert-danger button{right: 0;}
+
+.btn-add i{right: -1px;}
+
+.main-table td i{margin-right: 10px;}
+
+.main-table-actions .others{text-align: left;}
+
+.main-table-actions .others .btn-edit i,
+.main-table-actions .others .btn-approve i, 
+.categories .category .hidden-btns .cat-btn-edit i{right: -4px;}
+
+/*.........................................................................................*/
+/*End Main Rules*/ 
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Bootstrap Edit*/
+/*.........................................................................................*/
+
+.navbar-inverse .navbar-brand{padding-left: 65px;}
+
+.navbar-right{float: left !important;margin-right: unset;}
+
+@media (max-width: 768px) {
+	.navbar-right{float: unset !important;margin-right: -15px;}	
+}
+
+.pull-right{float: left!important;}
+
+@media (min-width: 768px) {  
+	.dropdown-menu:before{left: 14px;right: unset;float: left;}
+}
+
+/*.........................................................................................*/
+/*End Bootstrap Edit*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start select box it Edit*/
+/*.........................................................................................*/
+
+.selectboxit-container .selectboxit-options{text-align: right;}
+
+.selectboxit-arrow-container{left: 0;}
+
+/*.........................................................................................*/
+/*End select box it Edit*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Table Edit Edit*/
+/*.........................................................................................*/
+
+.table-responsive .row:first-child{border-right: 1px solid #c1c1c1;border-left: 1px solid #c1c1c1;}
+
+.dataTables_length label{margin-right: 30px;}
+
+.dataTables_filter label{margin-left: 30px;}
+
+table.table-bordered.dataTable th, 
+table.table-bordered.dataTable td{border-left-width: thin;}
+
+div.dataTables_wrapper div.dataTables_paginate{text-align: left;}
+
+div.dataTables_wrapper div.dataTables_filter{text-align: left;}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:before{right: 1px;}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child, 
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child{padding-right: 10px;}
+
+.table-responsive .dataTables_info{margin-right: 20px;}
+
+/*.........................................................................................*/
+/*End Table Edit Edit*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Admin Login Form*/
+/*.........................................................................................*/
+
+.login .login-form input:not(.btn){padding: 20px 50px 20px 10px;}
+
+.login .login-form i span{right: 35px;}
+
+/*.........................................................................................*/
+/*End Admin Login Form*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Dashboard*/
+/*.........................................................................................*/
+
+.stats .stat i{margin-left: 5%;margin-right: 0;padding-right: 6px;}
+
+.latest .panel-title i{margin-right: unset;margin-left: 10px;}
+
+.latest .main-table-actions .others{right: -10px;}
+
+.latest .main-table-actions .others .btn-delete i, 
+.latest .main-table-actions .others .btn-edit i, 
+.latest .main-table-actions .others .btn-approve i{right: -6px;}
+
+.latest .main-table td span:last-of-type{margin-right: 10px;}
+
+.latest .main-table td span:first-of-type{margin-left: 10px;}
+
+.latest .comments .main-table td span:first-of-type{margin-left: 10px;}
+
+.latest .comments .main-table td span:last-of-type{margin-right: 10px;}
+
+/*.........................................................................................*/
+/*End Dashboard*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Categories*/
+/*.........................................................................................*/
+
+.nice-page .dk-logo{right: 20%;}
+
+.nice-page h1{right: -15%;}
+
+.options .option:nth-child(2){margin-right: 2%;margin-left: 2%;}
+
+.categories .panel-default>.panel-heading{border-top-right-radius: 10px;border-top-left-radius: 10px;}
+
+@media (min-width: 992px) {
+	.categories .panel-default>.panel-heading .head-title{margin-right: 20px;margin-left: unset;}
+}
+
+.categories .panel-body .category .cat-options .hidden-btns{left: -125px;}
+
+.categories .panel-body .category:hover .hidden-btns {left: 10px;}
+
+.categories .panel-body .category .cat-options span.vis-false,
+.categories .panel-body .category .cat-options span.comm-false,
+.categories .panel-body .category .cat-options span.ads-false{right: 20%;}
+
+.categories .panel-body .category .cat-options span.vis-false:before,
+.categories .panel-body .category .cat-options span.comm-false:before,
+.categories .panel-body .category .cat-options span.ads-false:before{
+    right: -30px;
+    border-color: transparent transparent transparent #565656;
+}
+
+.categories .panel-body .category .cat-options span.is-visible-false,
+.categories .panel-body .category .cat-options span.is-comment-allowed-false,
+.categories .panel-body .category .cat-options span.is-ads-allowed-false{
+    margin-left: 12px;
+	margin-right: unset;	    
+}
+
+.categories .panel-body .category h3{padding-right: 15px;}
+
+.categories .panel-body .category h3 span{margin-right: 10px;margin-left: 5px;}
+
+@media (max-width: 992px) {
+	.categories .panel-body .category h3 span{
+    	margin-right: unset;
+    	float: none;
+    	display: block;
+    	margin-left: unset;
+    	margin-top: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.categories .child-categories .col-xs-offset-2{
+    	margin-right: 25.666667% !important;
+    	margin-left: unset !important;
+	}
+}
+
+@media (min-width: 768px){	
+	.categories .child-categories .col-xs-offset-2{
+    	margin-right: 25.666667% !important;
+    	margin-left: unset !important;
+	}
+}
+
+@media (min-width: 992px){
+	.categories .child-categories .col-xs-offset-2{
+		margin-right: 11.666667% !important;
+		margin-left: unset !important;
+	}
+}
+
+@media (min-width: 1200px){
+	.categories .child-categories .col-lg-offset-2{
+		margin-right: 11.666667% !important;    
+		margin-left: unset !important;
+	}
+}
+
+/*.........................................................................................*/
+/*End Categories*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start footer*/
+/*.........................................................................................*/
+
+.footer .scroll-top{left: 20px;}
+
+/*.........................................................................................*/
+/*End footer*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Grouping System*/
+/*.........................................................................................*/
+
+.lang-options, .main-table-actions .others, .stats .stat .info, .latest .main-table td span:first-of-type,
+.nice-page .dk-logo, .categories .panel-body .category h3 span{
+	float: left;
+}
+
+.main-table td i, .main-table-actions .add, .selectboxit-text, 
+table.dataTable > tbody > tr.child span.dtr-title, .stats .stat i, .latest .main-table td span:last-of-type,
+.nice-page h1, .options .option{
+	float: right;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child, 
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child,
+.categories .panel-body .category .cat-options span.vis-false,
+.categories .panel-body .category .cat-options span.comm-false,
+.categories .panel-body .category .cat-options span.ads-false,
+.categories .panel-body .category .cat-options span.vis-false:before,
+.categories .panel-body .category .cat-options span.comm-false:before,
+.categories .panel-body .category .cat-options span.ads-false:before,
+.login .login-form i span{
+	left: unset;
+}
+
+.asterisk, .form-group #result, .form-group .show-password, .selectboxit-arrow-container,
+.categories .panel-body .category .cat-options .hidden-btns, .footer .scroll-top{
+	right: unset;
+}
+
+/*.........................................................................................*/
+/*End Grouping System*/
+/*.........................................................................................*/

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xmlns="http://java.sun.com/xml/ns/javaee" 
+		xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+		xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+		id="WebApp_ID" version="3.0">
+  <display-name>dkaken</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+    
+  
+  <servlet>
+  	<servlet-name>Test db Connection</servlet-name>
+  	<servlet-class>com.dkaken.admin.controller.TestConnectionController</servlet-class>
+  </servlet>
+  
+  <servlet>
+	<servlet-name>Admin Login</servlet-name>
+	<servlet-class>com.dkaken.admin.controller.AdminLoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+	<servlet-name>Logout</servlet-name>
+	<servlet-class>com.dkaken.admin.controller.LogoutServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+	<servlet-name>Admin User Servlet</servlet-name>
+	<servlet-class>com.dkaken.admin.controller.UserServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+	<servlet-name>Category Servlet</servlet-name>
+	<servlet-class>com.dkaken.admin.controller.CategoryServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+	<servlet-name>Item Servlet</servlet-name>
+	<servlet-class>com.dkaken.admin.controller.ItemServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+	<servlet-name>Comment Servlet</servlet-name>
+	<servlet-class>com.dkaken.admin.controller.CommentServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+	<servlet-name>Home Servlet</servlet-name>
+	<servlet-class>com.dkaken.controller.HomeServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+	<servlet-name>Front Category Servlet</servlet-name>
+	<servlet-class>com.dkaken.controller.CategoryServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+	<servlet-name>User Login</servlet-name>
+	<servlet-class>com.dkaken.controller.LoginServlet</servlet-class>
+  </servlet> 
+
+  <servlet>
+	<servlet-name>User Logout</servlet-name>
+	<servlet-class>com.dkaken.controller.LogoutServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+	<servlet-name>Profile Servlet</servlet-name>
+	<servlet-class>com.dkaken.controller.ProfileServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+	<servlet-name>New Item Servlet</servlet-name>
+	<servlet-class>com.dkaken.controller.NewItemServlet</servlet-class>
+  </servlet> 
+
+  <servlet>
+	<servlet-name>Front Item Servlet</servlet-name>
+	<servlet-class>com.dkaken.controller.ItemServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+	<servlet-name>Add Comment</servlet-name>
+	<servlet-class>com.dkaken.controller.CommentServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+	<servlet-name>Tags Servlet</servlet-name>
+	<servlet-class>com.dkaken.controller.TagsServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+	<servlet-name>Latest Servlet</servlet-name>
+	<servlet-class>com.dkaken.controller.LatestServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+ 	<servlet-name>Latest Servlet</servlet-name>
+ 	<url-pattern>/latest_servlet.do</url-pattern>
+  </servlet-mapping>     
+  
+  <servlet-mapping>
+ 	<servlet-name>Tags Servlet</servlet-name>
+ 	<url-pattern>/tags_servlet.do</url-pattern>
+  </servlet-mapping>     
+  
+  <servlet-mapping>
+ 	<servlet-name>Add Comment</servlet-name>
+ 	<url-pattern>/comment.do</url-pattern>
+  </servlet-mapping>     
+  
+  <servlet-mapping>
+ 	<servlet-name>Front Item Servlet</servlet-name>
+ 	<url-pattern>/items.do</url-pattern>
+  </servlet-mapping>   
+  
+  <servlet-mapping>
+ 	<servlet-name>New Item Servlet</servlet-name>
+ 	<url-pattern>/new_item.do</url-pattern>
+  </servlet-mapping>        
+  
+  <servlet-mapping>
+ 	<servlet-name>Profile Servlet</servlet-name>
+ 	<url-pattern>/profile.do</url-pattern>
+  </servlet-mapping>  
+
+  <servlet-mapping>
+ 	<servlet-name>User Logout</servlet-name>
+ 	<url-pattern>/logout.do</url-pattern>
+  </servlet-mapping>    
+
+  <servlet-mapping>
+ 	<servlet-name>User Login</servlet-name>
+ 	<url-pattern>/user_login.do</url-pattern>
+  </servlet-mapping>   
+  
+  <servlet-mapping>
+ 	<servlet-name>Front Category Servlet</servlet-name>
+ 	<url-pattern>/category_servlet.do</url-pattern>
+  </servlet-mapping>    
+
+  <servlet-mapping>
+ 	<servlet-name>Home Servlet</servlet-name>
+ 	<url-pattern>/home_servlet.do</url-pattern>
+  </servlet-mapping>       
+  
+  <servlet-mapping>
+ 	<servlet-name>Comment Servlet</servlet-name>
+ 	<url-pattern>/admin/comment_servlet.do</url-pattern>
+  </servlet-mapping>    
+  
+  <servlet-mapping>
+ 	<servlet-name>Item Servlet</servlet-name>
+ 	<url-pattern>/admin/item_servlet.do</url-pattern>
+  </servlet-mapping>       
+
+  <servlet-mapping>
+ 	<servlet-name>Category Servlet</servlet-name>
+ 	<url-pattern>/admin/category_servlet.do</url-pattern>
+  </servlet-mapping>  
+ 
+
+  <servlet-mapping>
+ 	<servlet-name>Admin User Servlet</servlet-name>
+ 	<url-pattern>/admin/user_servlet.do</url-pattern>
+  </servlet-mapping>     
+  
+  <servlet-mapping>
+ 	<servlet-name>Logout</servlet-name>
+ 	<url-pattern>/admin/logout.do</url-pattern>
+  </servlet-mapping>    
+  
+  <servlet-mapping>
+ 	<servlet-name>Admin Login</servlet-name>
+ 	<url-pattern>/admin/admin_login.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>Test db Connection</servlet-name>
+  	<url-pattern>/db_test.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <listener>
+  	<listener-class>com.dkaken.admin.utils.ConnectionServletContextListener</listener-class>
+  </listener>
+  
+  <context-param>
+  	<param-name>dbname</param-name>
+  	<param-value>shop</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>url</param-name>
+  	<param-value>jdbc:mysql://localhost:3306/</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>username</param-name>
+  	<param-value>root</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>password</param-name>
+  	<param-value>root</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>temp_dir</param-name>
+  	<param-value>includes/templates/</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>css_dir</param-name>
+  	<param-value>layouts/css/</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>dt_dir</param-name>
+  	<param-value>layouts/DataTables/</param-value>
+  </context-param>  
+  
+  <context-param>
+  	<param-name>js_dir</param-name>
+  	<param-value>layouts/js/</param-value>
+  </context-param>
+
+  <context-param>
+  	<param-name>img_dir</param-name>
+  	<param-value>layouts/images/</param-value>
+  </context-param>
+
+  <context-param>
+  	<param-name>uploads_dir</param-name>
+  	<param-value>uploads/profile_pics/</param-value>
+  </context-param>  
+  
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/error_page_not_found.jsp</location>
+  </error-page>  
+   <!--
+  <error-page>
+  	<exception-type>java.lang.Throwable</exception-type>
+  	<location>/error_page.jsp</location>
+  </error-page>
+  
+ 
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/error_page_not_found.jsp</location>
+  </error-page>  
+  
+  <session-config>
+  	<session-timeout>30</session-timeout>
+  </session-config>  
+  -->
+  
+  
+
+  
+</web-app>

@@ -1,0 +1,288 @@
+/*.........................................................................................*/
+/*Start Main Rules*/ 
+/*.........................................................................................*/
+
+.lang-options{margin-right: 15px;}
+ 
+.no-data-found{border-right: 20px solid #c0392b;border-left: none;}
+
+.asterisk{left: 20px;}
+
+.form-group .password{padding-left: 175px;padding-right: 16px;}
+
+.form-group #result{left: 100px;}
+
+.form-group .show-password{left: 35px;}
+
+.success-msg i{padding-left: 5px;padding-right: unset;}
+
+.fail-msg i{padding-left: 5px;padding-right: unset;}
+
+.server-errors .alert-danger button{right: 0;}
+
+.client-errors .alert-danger button{right: 0;}
+
+.btn-add i{right: -1px;}
+
+.main-table td i{margin-right: 10px;}
+
+.main-table-actions .others{text-align: left;}
+
+.nice-page .dk-logo{right: 20%;}
+
+.nice-page h1{right: -15%;}
+
+.options .option:nth-child(2){margin-right: 2%;margin-left: 2%;}
+
+/*.........................................................................................*/
+/*End Main Rules*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Bootstrap Edit*/
+/*.........................................................................................*/
+
+.navbar-inverse .navbar-brand{padding-left: 65px;padding-right: unset;}
+
+.navbar-inverse .navbar-nav>li>a:first-child{padding-left: 0;}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{margin-right: 0;}
+
+.table-responsive .row:first-child{border-right: 1px solid #c1c1c1;border-left: 1px solid #c1c1c1;}
+
+.table-responsive .dataTables_info{margin-right: 20px;}
+
+.dropdown-menu:before{right: 0;}
+
+/*.........................................................................................*/
+/*End Bootstrap Edit*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start data table edit*/
+/*.........................................................................................*/
+
+.dataTables_length label{margin-right: 30px;}
+
+.dataTables_filter label{margin-left: 30px;}
+
+/*.........................................................................................*/
+/*End data table edit*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start select box it Edit*/
+/*.........................................................................................*/
+
+.selectboxit-container .selectboxit-options{text-align: right;}
+
+.selectboxit-arrow-container{left: 0;}
+
+/*.........................................................................................*/
+/*End select box it Edit*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Login page*/
+/*.........................................................................................*/
+
+.login-page .forms h1{right: 60px;}
+
+@media (max-width: 1200px) {
+	.login-page .forms{width: 100%;float: none;}
+	
+	.login-page .forms h1{
+		right: unset;
+    	width: unset;
+	    padding-bottom: 15px;
+	    border-radius: 5px;
+	    font-size: 30px; 
+	    max-width: 500px;
+		margin: 20px auto;	       	
+	}
+	
+	.login-page .forms form{float: none;margin: auto;}
+} 
+
+/*.........................................................................................*/
+/*End Login page*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Categories Page*/
+/*.........................................................................................*/
+
+.item-box .item-price{right: 15px;}
+
+.item-box .item-image{margin-left: 2%;}
+
+.item-box .item-info{margin-left: 3%;}
+
+.item-box .item-info .cat-options span{margin-left: 10px;}
+
+.item-box .item-info .cat-options span:not(:nth-child(1)){padding-right: 40px;padding-left: 40px;}
+
+@media (max-width: 992px) {
+	.item-box .item-info .cat-options span:not(:nth-child(1)){
+		padding-left: 20px; 
+		padding-right: 20px;
+	}
+}
+
+.item-box .item-owner{text-align: left;}
+
+/*.........................................................................................*/
+/*End Categories Page*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Profile Page*/
+/*.........................................................................................*/
+
+.profile .information ul li i{margin-left: 10px;}
+
+.easyPaginateNav a {margin-left: 5px;}
+
+.profile .item-box .item-not-approved{right: 15px;}
+
+.profile .item-box .waitting{left: 10px;}
+
+.profile .item-box .waitting:before{
+    right: -30px;
+    border-color: transparent transparent transparent rgba(231, 76, 60, 0.6);
+}
+
+.profile .comments .comm span{margin-left: 10px;}
+
+/*.........................................................................................*/
+/*End Profile Page*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start New Item Page*/
+/*.........................................................................................*/
+
+.new-item .item-box .upload-icon{right: 15px;}
+
+.new-item .item-box .item-image i{right: 50px;left: unset;}
+
+@media (max-width: 992px) { 
+	.new-item .item-box .item-image i{right: 35px;left: unset;}
+}
+
+@media (max-width: 768px) { 
+	.new-item .item-box .item-image i{right: 25px;left: unset;}
+}
+
+/*.........................................................................................*/
+/*End New Item Page*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Items Page*/
+/*.........................................................................................*/
+
+.show-item ul li i{margin-left: 10px;}
+
+.show-item ul li a{margin-left: 10px;margin-right: 10px;}
+
+.show-item .add-comment textarea{padding-left: 35px;padding-right: 16px;}
+
+.show-item .comments-boxs .comment-box .comment-info .lead{font-weight: 400;}
+
+.show-item .comments-boxs .comment-box .comment-info .lead:before{
+    right: -30px;
+    border-color: transparent transparent transparent #a2dbcf;
+}
+
+/*.........................................................................................*/
+/*End Items Page*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start header Page*/
+/*.........................................................................................*/
+
+.upper-bar .user-actions{margin-right: 30px;}
+
+.upper-bar .user-actions i{margin-right: 10px;}
+
+.upper-bar .session-user-profile{margin-right: 20px;}
+
+@media (max-width: 768px) {
+	.upper-bar .session-user-profile{margin-right: unset;}
+}
+
+.upper-bar .session-username{margin-left: 10px;}
+
+.main-bar .dk-logo-brand span{right: 12px;}
+
+.main-bar span{margin-left: 10px;}
+
+/*.........................................................................................*/
+/*End header Page*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Home Page*/
+/*.........................................................................................*/
+
+.home-page .category .parent a{margin-right: 10px;}
+
+/*.........................................................................................*/
+/*End Home Page*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Footer Page*/
+/*.........................................................................................*/
+
+.footer .scroll-top{left: 20px;}
+
+/*.........................................................................................*/
+/*End Footer Page*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Grouping System*/
+/*.........................................................................................*/
+
+.lang-options, .main-table-actions .others, .nice-page .dk-logo, .upper-bar span.user-not-approved,
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form, .login-page .forms, .login-page .forms form,
+.item-box .item-owner, .profile .comments .comm span, .home-page .category .parent .more{
+	float: left;	
+}
+
+.main-table td i, .main-table-actions .add, .nice-page h1, .options .option, .selectboxit-text,
+.login-page .welcome-pic, .categories .row hr, .item-box .item-image, .item-box .item-info,
+.profile .user-profile-pic, .main-bar .logo, .main-bar .latest{
+	float: right;
+}
+
+.server-errors .alert-danger button, .client-errors .alert-danger button, .btn-add i, .nice-page .dk-logo,
+.nice-page h1, .dropdown-menu:before, .login-page .forms h1, .item-box .item-price,
+.profile .item-box .item-not-approved, .profile .item-box .waitting:before, .new-item .item-box .upload-icon,
+.show-item .comments-boxs .comment-box .comment-info .lead:before, .main-bar .dk-logo-brand span{
+	left: unset;
+}
+
+.lang-options, .main-table td i, .upper-bar .user-actions, .upper-bar .user-actions i,
+.upper-bar .session-user-profile, .table-responsive .dataTables_info, .dataTables_length label,
+.home-page .category .parent a{
+	margin-left: unset;
+}
+
+.asterisk, .form-group #result, .form-group .show-password, .selectboxit-arrow-container,
+.profile .item-box .waitting, .footer .scroll-top{
+	right: unset;
+}
+
+.upper-bar .session-username, .dataTables_filter label, .item-box .item-image, .item-box .item-info,
+.item-box .item-info .cat-options span, .profile .information ul li i, .easyPaginateNav a,
+.profile .comments .comm span, .show-item ul li i, .main-bar span{
+	margin-right: unset;
+}
+
+/*.........................................................................................*/
+/*End Grouping System*/
+/*.........................................................................................*/

@@ -1,0 +1,1179 @@
+/*.........................................................................................*/
+/*Start Main Rules*/
+/*.........................................................................................*/
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+} 
+
+body{
+	background-color: rgb(219, 228, 226); 	
+	color :rgb(132,133,132);
+	font-size: 18px;
+	font-family: 'Droid Arabic Kufi', sans-serif;
+}
+
+.errors{ 
+	position: fixed;
+    width: 50%;
+    top: 20px;
+    left: 50%;
+    margin-left: -25%;
+	z-index: 999999;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 50px;
+	margin-top: 25px;
+    margin-bottom: 50px;
+    background-color: #d0e2de;
+    padding: 30px;
+    border-radius: 5px;    
+}
+
+p{font-family: 'Droid Arabic Kufi', sans-serif;}
+
+textarea {resize: none;}
+
+form:not(.lang-form){background-color: #d0e2de;padding: 50px;border-radius: 5px;}
+
+.lang-options{width: 8%;margin-left: 15px;}
+
+.lang-options .selectboxit-container span, 
+.lang-options .selectboxit-container .selectboxit-options a{
+    height: 33px !important;
+    line-height: 33px !important;
+    font-size: 15px;
+}
+
+.lang-options .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor{
+	background-image: linear-gradient(to bottom, #1c1e1f, #1abc9c);	
+}
+
+.lang-options .selectboxit .selectboxit-arrow-container .selectboxit-arrow{top: 40%;}
+
+.spacer-tr{height: 15px;background-color: #16a085;}
+
+.spacer-td{background-color: #16a085;}
+
+.bootstrap-tagsinput{width: 100%;text-align: center;}
+
+.bootstrap-tagsinput .tag{padding: 6px 10px 4px 10px;margin-top: 10px;margin-bottom: 10px;}
+
+.bootstrap-tagsinput .label{display: inline-block;}
+
+.bootstrap-tagsinput input{
+	width: 100%;
+	font-size: 18px;
+    padding: 10px 16px;
+	height: 36px; 	
+}     
+
+.bootstrap-tagsinput input::-webkit-input-placeholder{line-height: 3;color: #999;}
+
+.no-data-found{background-color: #ecf0f1;padding: 20px;border-left: 20px solid #c0392b;}
+
+.green{color: #16a085;}
+
+.red{color: #e74c3c;}
+
+.overlay{
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 60, 117, 0.7);
+}
+
+.asterisk{
+    font-size: 30px;
+    color: #cd3633;
+	top: 9px;
+    right: 20px;
+    display: none;
+}
+
+.form-group .password{padding-right: 175px;}
+
+.form-group #result{top: 12px;right: 100px;}
+
+.form-group .short{color:#e74c3c;}
+
+.form-group .weak{color: #e67e22;}
+
+.form-group .good{color: #3498db;}
+
+.form-group .strong{color: #2ecc71;}
+
+.form-group .show-password{
+    right: 35px;
+	top: 3px;
+    display: inline-block;
+    padding: 1px;
+    border-radius: 5px;
+    background-color: rgb(240, 240, 240);    
+}
+
+.form-group .show-password:hover{background-color: #e1ecdf;}
+
+.form-group .show-password i{color: #cd3633;}
+
+.form-group .show-password i:hover{color: green;}
+
+.custom-form{margin-bottom: 100px;}
+
+.custom-form .btn{
+    width: 100%;
+    background-color: rgb(26, 188, 156);
+    border-color: rgb(26, 188, 156);
+    color: rgb(255, 255, 255);
+}
+
+.custom-form .btn:hover{background-color: rgb(132,133,132);border-color: rgb(132,133,132);}
+
+.dk-logo i{font-size: 100px;}
+
+.dk-logo p{font-size: 25px;font-weight: bold;top: -63px;}
+
+.dk-logo-brand i{font-size: 50px;}
+
+.dk-logo-brand p{font-size: 15px;font-weight: bold;top: -32px;}
+
+.success-msg{ 	
+	background-color: #030a06;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+	text-align: center;
+	-webkit-box-shadow: 0px 0px 10px 13px rgba(65, 135, 99, 0.35);
+	-moz-box-shadow: 0px 0px 10px 13px rgba(65, 135, 99, 0.35);
+	-o-box-shadow: 0px 0px 10px 13px rgba(65, 135, 99, 0.35);
+	box-shadow: 0px 0px 10px 13px rgba(65, 135, 99, 0.35);
+}
+
+.success-msg div{margin-bottom: 10px;}
+
+.success-msg i{
+    margin-top: 15px;
+    padding-right: 5px;
+    color: #aa7004;
+    margin-top: 15px;
+    top: 5px;    	
+}
+
+.success-msg span{font-size: 30px;color: #117f11;}
+
+.fail-msg{	
+	background-color: #030a06;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+	text-align: center;
+	-webkit-box-shadow: 0px 0px 10px 13px rgba(65, 135, 99, 0.35);
+	-moz-box-shadow: 0px 0px 10px 13px rgba(65, 135, 99, 0.35);
+	-o-box-shadow: 0px 0px 10px 13px rgba(65, 135, 99, 0.35);
+	box-shadow: 0px 0px 10px 13px rgba(65, 135, 99, 0.35);
+}
+
+.fail-msg div{margin-bottom: 10px;}
+
+.fail-msg i{
+    margin-top: 15px;
+    padding-right: 5px;
+    color: #7b7a79;
+    margin-top: 15px;
+    top: 5px;    	
+}
+
+.fail-msg span{font-size: 30px;color: #700a09;}
+
+.server-errors{text-align: center;} 
+
+.server-errors .alert{padding: 10px;margin-bottom: 15px;}
+
+.server-errors .alert-danger{background-color: #545353;border-color: #545353;}
+
+.server-errors .alert-danger button{
+    font-size: 60px;
+    color: #fc0500;
+    top: -20px;
+	left: 0;
+}
+
+.client-errors{margin: auto;text-align: center;}
+
+.client-errors .alert{padding: 5px;margin-bottom: 5px;top: 10px;}
+
+.client-errors .alert-danger{background-color: #a2cdc4;border-color: #a2cdc4;}
+
+.client-errors .alert-danger button{
+    font-size: 60px;
+    color: #fc0500;
+    top: -20px;
+	left: 0;
+}
+
+.btn-add{
+	margin-bottom: 10px;
+	background-color: rgb(54,54,54);
+    border-color: rgb(54,54,54);
+    color: rgb(132,133,132);
+	font-size: 16px;
+}
+
+.btn-add i{top: 2px;left: -1px;}
+
+.btn-add:hover{background-color: rgb(132,133,132);border-color: rgb(132,133,132);}
+
+.main-table td{vertical-align: middle !important;}
+
+.main-table td i{margin-left: 10px;margin-top: 4px;color: #c0392b;}
+
+.main-table thead td{padding: 15px !important;}
+
+.main-table tbody td{cursor:pointer;}
+
+.main-table tbody tr{background-color: #2c3e50;color: #ecf0f1;}
+
+.main-table tbody tr:hover{background-color: #34495e;}
+
+.main-table-actions{overflow: hidden;}
+
+.main-table-actions .add{width: 50%;}
+
+.main-table-actions .others{width: 50%;text-align: right;}
+
+.main-table-actions .others .btn-delete,
+.main-table-actions .others .btn-edit,
+.main-table-actions .others .btn-approve{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.main-table-actions .others .btn-delete:hover{background-color: #c0392b;}
+
+.main-table-actions .others .btn-edit:hover{background-color: #7f8c8d;}
+
+.main-table-actions .others .btn-approve:hover{background-color: #27ae60;}
+
+.main-table-actions .others .btn-delete i,
+.main-table-actions .others .btn-edit i,
+.main-table-actions .others .btn-approve i{top: 6px;color: #ffffff;}
+
+.main-table-actions .others .btn-delete{background-color: #e74c3c;border-color: #e74c3c;}
+
+.main-table-actions .others .btn-edit{background-color: #95a5a6;border-color: #95a5a6;}
+
+.main-table-actions .others .btn-approve{background-color: #2ecc71;border-color: #2ecc71;display: none;}
+
+.selected{background-color: #ecf0f1 !important;color: #1d1d1d !important;}
+
+.others-msg{
+    text-align: center;
+    top: 5px;
+    color: #8d4141; 
+    display: none;
+}
+
+.nice-page{overflow: hidden;}
+
+.nice-page .dk-logo{width: 50%;top: 10px;left: 20%;}
+
+.nice-page h1{width: 50%;left: -15%;}
+
+.options{overflow: hidden;}
+
+.options .option{
+	width: 32%;
+	text-align: center;
+    background-color: #363636;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.options .option:nth-child(2){margin-left: 2%;margin-right: 2%;}
+
+.options .option .top{display: block;}
+
+.upper-bar{padding: 10px;}
+
+.upper-bar .container{padding: 10px 5px;}
+
+.upper-bar .session-user-profile{
+    margin-left: 20px;	
+    padding: 10px 10px 6px 10px;
+    text-decoration: none;
+    color: #ecf0f1;
+    border-radius: 6px;	
+}
+
+@media (max-width: 768px) {
+	.upper-bar .session-user-profile{
+			display: block;
+			margin-top: 10px;
+	    	margin-left: unset;
+		}
+}
+
+.upper-bar .session-user-profile:hover{background-color: #d0e2de;}
+
+.upper-bar .session-username{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-transform: capitalize;        	
+}
+
+.upper-bar .user-actions{margin-left: 30px;top: -1px;}
+
+.upper-bar .user-actions i{margin-left: 10px;}
+
+.upper-bar .dk-logo-brand{top: -40px;}
+
+.upper-bar img{
+    max-width: 40px;
+    max-height: 40px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #1abc9c;  
+    padding: 2px;    	
+}
+
+.upper-bar span.user-not-approved{
+	display: inline-block;
+    background: #1d1d1d;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.upper-bar .login-signup{
+    text-decoration: none;	
+}
+
+/*.........................................................................................*/
+/*End Main Rules*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Bootstrap Edit*/
+/*.........................................................................................*/
+
+.navbar-inverse{background-color: #2b2a2a;border-color: #2b2a2a;min-height: 80px;}
+
+.caret{border-top: 15px dashed;border-right: 10px solid transparent;border-left: 10px solid transparent;}
+
+.btn-group.open .dropdown-toggle{-webkit-box-shadow: unset;box-shadow: unset;}
+
+.btn-group, .btn-group-vertical{top: 4px;}
+
+@media (max-width: 768px) {
+	.btn-group{display: block;}
+}
+
+.lang-options .selectboxit-container .selectboxit-options{background: rgb(0, 0, 0) !important;}
+
+.panel{background-color: #d0e2de;}
+
+.dropdown-menu{
+    min-width: 200px;
+    background-color: #d0e2de;
+    border: 1px solid #d0e2de;
+	-webkit-box-shadow: unset;
+    box-shadow: unset;
+    margin-top: 23px;   
+}
+
+@media (max-width: 768px) {
+	.dropdown-menu{
+		margin-top: 15px;
+		position: unset;
+		float: unset;
+		text-align: unset;
+	}
+	
+	.dropdown-menu:before{
+		display: none;
+	}
+}
+
+.dropdown-menu:before{
+	content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 15px 10px;
+    border-color: transparent transparent #d0e2de transparent;
+    top: -42px;
+    left: 0px;
+}
+
+.dropdown-menu>li>a{padding: 10px 20px;}
+
+.pagination>.active>a, 
+.pagination>.active>a:focus, 
+.pagination>.active>a:hover, 
+.pagination>.active>span, 
+.pagination>.active>span:focus, 
+.pagination>.active>span:hover{background-color: #1d1d1d;border-color: #848584;color: #848584;}
+
+.pager li>a, .pager li>span{border-radius: 10px;padding: 3px 25px;}
+
+.table-responsive{overflow: visible;}
+
+.table-responsive .row:first-child{
+	padding: 10px;
+    border-top: 1px solid #c1c1c1;
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+
+.table-responsive .row:last-child{margin-bottom: 200px;padding: 10px;}
+
+.table-responsive .dataTables_info{margin-left: 20px;margin-top: 5px;}
+
+.table-responsive .dataTables_length label{width: 60px;max-width: 60px;}
+
+.table-responsive .selectboxit-container span,
+.table-responsive .selectboxit-container .selectboxit-options a{
+	height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.table-responsive .selectboxit .selectboxit-arrow-container .selectboxit-arrow{top: 40%;}
+
+/*.........................................................................................*/
+/*End Bootstrap Edit*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start data table edit*/
+/*.........................................................................................*/
+
+.dataTables_length label{margin-left: 30px;margin-top: 10px;}
+
+.dataTables_filter label{margin-right: 30px;margin-top: 10px;}
+
+.table.dataTable{margin-top: 0 !important;margin-bottom: 0 !important;}
+
+/*.........................................................................................*/
+/*End data table edit*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start select box it Edit*/
+/*.........................................................................................*/
+
+.selectboxit-container{width: 100%;}
+
+.selectboxit-container .selectboxit{width: 100%;}
+
+.selectboxit-container span, .selectboxit-container .selectboxit-options a{
+	height: 46px;
+    line-height: 46px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #999;
+    font-family: 'Droid Arabic Kufi', sans-serif;    
+}
+/*.........................................................................................*/
+/*End select box it Edit*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Error Page*/
+/*.........................................................................................*/
+
+.error{width: 900px;margin: auto;text-align: center;}
+
+.error .msg{margin: 50px;}
+
+/*.........................................................................................*/
+/*End Error Page*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Login page*/
+/*.........................................................................................*/
+
+.login-page{overflow: hidden;} 
+
+.login-page .welcome-pic{width: 50%;margin-top: 100px;}
+
+.login-page .welcome-pic img{width: 100%;height: 100%;}
+
+.login-page .forms{width: 50%;}
+
+
+.login-page .forms form.signup{display: none;}
+
+.login-page .forms form{max-width: 500px;}
+
+.login-page .forms h1{
+	text-align: center;
+	margin-bottom: 30px;
+    left: 60px;
+    width: 90%
+}
+
+.login-page .forms form input[type='submit']{width: 100%;}
+
+.login-page .forms [data-value='signup'].active{color: #3498db;}
+
+.login-page .forms .btn-signup{background-color: #3498db;border-color: #3498db;}
+
+.login-page .login-form{padding: 50px 40px 30px 40px;border-radius: 5px;}
+
+.login-page .signup-form{padding: 50px 40px 30px 40px;border-radius: 5px;}
+
+@media (max-width: 1200px) {
+	.login-page .forms{width: 100%;float: none;}
+	.login-page .forms h1{
+		left: unset;
+    	width: unset;
+	    padding-bottom: 15px;
+	    border-radius: 5px;
+	    font-size: 30px; 
+	    max-width: 500px;
+		margin: 20px auto;	       	
+	}
+	.login-page .forms form{float: none;margin: auto;}
+}
+
+/*.........................................................................................*/
+/*End Login page*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Categories Page*/
+/*.........................................................................................*/
+
+.item-box{
+    overflow: hidden;
+    background-color: #d0e2de;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #d0e2de;
+}
+
+@media (max-width: 992px) {
+	.item-box{max-height: 150px;}
+}
+
+@media (max-width: 768px) {
+	.item-box{max-height: 100px;}
+}
+
+.item-box h3{margin-top: 0;margin-bottom: 0;}
+
+.item-box:hover .item-image img{border: 5px solid #1abc9c;}
+
+.categories .row hr{width: 95%;border: 1px solid #413618;}
+
+.categories .row:last-child hr{display: none;}
+
+.item-box .item-price{
+    left: 15px;
+    top: 15px;
+    padding: 2px 6px;	
+    font-size: 15px;    
+}
+
+@media (max-width: 768px) {
+	.item-box .item-price{font-size: 10px;}
+}
+
+.item-box .item-image{width: 15%;margin-right: 2%;height: 168px;}
+
+@media (max-width: 768px) {
+	.item-box .item-image{width: 25%;}
+}
+
+.item-box .item-info{
+	width: 70%;
+    color: #848584;
+    margin-right: 3%;
+    background-color: rgb(223, 236, 233);
+    padding: 10px 20px;
+    border-radius: 10px;         	
+}
+
+@media (max-width: 768px) {
+	.item-box .item-info{width: 60%;}
+}
+
+.item-box .item-info > p {
+    margin-bottom: 5px;
+    width: 700px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 1200px) {
+	.item-box .item-info > p{width: 550px;}
+}
+
+@media (max-width: 992px) {
+	.item-box .item-info > p{font-size: 15px;margin-bottom: 0;width: 450px;}
+}
+
+@media (max-width: 768px) {
+	.item-box .item-info > p{font-size: 13px;width: 150px;}
+}
+
+.item-box .item-info .cat-options span{
+    display: inline-block;
+    padding: 11px 15px;
+    border: 1px solid #1abc9c;
+    color: #c9c9c9;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+@media (max-width: 992px) { 
+	.item-box .item-info .cat-options span{padding: 5px 5px;margin: unset;}
+}
+
+.item-box .item-info .cat-options span i{color: #644e10;}
+
+.item-box .item-info .cat-options span:not(:nth-child(1)){padding-left: 40px;padding-right: 40px;}
+
+@media (max-width: 992px) {
+	.item-box .item-info .cat-options span:not(:nth-child(1)){padding-left: 20px;padding-right: 20px;}
+}
+
+.item-box .item-info .cat-options span:hover{color: #7778a1;}
+
+@media (max-width: 768px) {
+	.item-box .item-info .cat-options{display: none;}
+}
+
+.item-box .item-owner{width: 10%;text-align: right;}
+
+.item-box .item-owner img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 2px;   
+}
+
+.item-box .item-info a{font-size: 40px;text-decoration: none;}
+
+@media (max-width: 992px) {
+	.item-box .item-info a{font-size: 25px;}
+}
+
+@media (max-width: 992px) {
+	.item-box .item-info a{font-size: 20px;}
+}
+
+.item-box .item-image img{
+	width: 100%;
+	height: 100%;
+    border: 5px solid #1abc9c;
+    max-width: 168px;
+    max-height: 168px;	
+}
+
+@media (max-width: 992px) {
+	.item-box .item-image img{max-height: 100px;}
+}
+
+@media (max-width: 768px) {
+	.item-box .item-image img{max-height: 75px;max-width: 100px;}
+} 
+
+/*.........................................................................................*/
+/*End Categories Page*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Profile Page*/
+/*.........................................................................................*/
+
+.profile .user-profile-pic{
+	width: 100px;
+	height: 100px;
+	margin: auto;
+    padding: 10px;	
+}
+
+.profile .options{margin-bottom: 20px;padding: 10px;}
+
+.profile .user-profile-pic img{width: 100%;height: 100%;}
+
+.profile .panel-primary>.panel-heading{
+    border-color: #a2dbcf;
+    padding: 15px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.profile .panel-primary{border-color: #d0e2de;border-bottom: 1px solid #d0e2de;padding-bottom: 10px;}
+
+.profile .information ul{margin: 0;padding: 0;}
+
+.profile .information ul li{padding: 10px;}
+
+@media (max-width: 768px) { 
+	.profile .information ul li{text-align: center;}   
+}
+
+.profile .information ul li i{margin-right: 10px;}
+
+.profile .information ul li span{display: inline-block;width: 200px;}
+
+@media (max-width: 768px) { 
+	.profile .information ul li span{width: unset;display: block;}   
+}
+
+.profile .information .edit-profile{margin-top: 15px;}
+
+.profile .ads{padding: 15px;}
+
+.profile .ads .title{padding: 10px;font-size: 25px;margin-bottom: 15px;}
+
+.easyPaginateNav{padding: 20px 10px;width: 100% !important;}
+
+.easyPaginateNav a {
+    background-color: #d0e2de;
+    margin-right: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.profile .item-box .item-not-approved{bottom: 15px;left: 15px;}
+
+@media (max-width: 992px) { 
+	.profile .item-box .item-not-approved{bottom: 43px;}
+}
+
+@media (max-width: 768px) { 
+	.profile .item-box .item-not-approved{bottom: 15px;}
+}
+
+.profile .item-box .item-not-approved i{
+    color: #e74c3c;
+    font-size: 25px;
+    background-color: #34495e;
+    padding: 5px;
+}
+
+@media (max-width: 768px) { 
+	.profile .item-box .item-not-approved i{font-size: 20px;} 
+}
+
+.profile .item-box .waitting{
+	display: none;
+    background-color: rgba(231, 76, 60, 0.6);
+    padding: 5px 10px;
+    right: 10px; 
+    top: 10px;
+	border-radius: 3px;
+}
+
+.profile .item-box .waitting:before{
+    content: "";
+    display: block;
+    left: -30px;
+    top: 3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent rgba(231, 76, 60, 0.6) transparent transparent;
+    border-width: 15px;
+}
+
+.profile .comments{margin-top: 20px;}
+
+.profile .comments .comm{
+    background-color: #dbe4e2;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;	
+}
+
+@media (max-width: 768px) { 
+	.profile .comments .comm{font-size: 15px;} 
+}
+
+.profile .comments .comm p{margin-bottom: 0;}
+
+.profile .comments .comm span{margin-right: 10px;}
+
+/*.........................................................................................*/
+/*End Profile Page*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start New Item Page*/
+/*.........................................................................................*/
+
+.new-item .item-box .upload-icon{left: 15px;bottom: 29px;color: #a2dbcf;}
+
+@media (max-width: 992px) { 
+	.new-item .item-box .upload-icon{bottom: 39px;}
+}
+
+@media (max-width: 768px) { 
+	.new-item .item-box .upload-icon{bottom: 14px;}
+	.new-item .item-box .upload-icon i{font-size: 30px;}
+}
+
+.new-item .item-box .item-image i{color: #a2dbcf;top: 50px;left: 50px;}
+
+@media (max-width: 992px) { 
+	.new-item .item-box .item-image i{top: 35px;left: 35px;font-size: 30px;}
+}
+
+@media (max-width: 768px) { 
+	.new-item .item-box .item-image i{top: 25px;left: 25px;font-size: 20px;}
+}
+
+.new-item .panel-primary{border-color: #1d1d1d;}
+
+/*.........................................................................................*/
+/*End New Item Page*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Items Page*/
+/*.........................................................................................*/
+
+.show-item .item{padding: 30px 20px;background-color: #d0e2de;}
+
+.show-item img{
+	width: 100%;
+    height: 100%;
+    max-width: 263px;
+    max-height: 263px;     
+}
+
+.show-item h2{margin-top: 0;}
+
+.show-item .item-description{
+    color: #f0f0f0;
+    padding: 0 20px;
+    border-radius: 5px;
+    line-height: 1.7;
+    margin-top: 25px;
+    min-width: 700px;
+    min-height: 75px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.show-item .item-description .read-more{
+    display: block;
+    color: #015e75;
+    margin: auto;
+    padding-top: 15px;     	
+}
+
+.show-item .unlogin-user a{text-decoration: none;}
+
+.show-item ul{margin: 0;padding: 0;}
+
+.show-item ul li{padding: 10px;}
+
+.show-item ul li i{margin-right: 10px;}
+
+.show-item ul li span{display: inline-block;width: 200px;}
+
+.show-item ul li span.line{width: 0;}
+
+.show-item ul li span.line:last-child{display: none;}
+
+.show-item ul li a{
+    text-decoration: none;	
+    text-transform: uppercase;
+    margin-right: 10px;
+    margin-left: 10px;    
+}
+
+.show-item ul li a.tags-anchors{display: inline-block;padding: 5px 20px;border-radius: 5px;}
+
+.show-item .custom-hr{border-top: 1px solid #a2dbcf;}
+
+.show-item .add-comment{margin-bottom: 30px;}
+
+.show-item .add-comment textarea{padding-right: 35px;}
+
+.show-item .comments-boxs{margin-top: 30px;}
+
+.show-item .comments-boxs .comment-box{
+	padding: 10px;
+    background-color: #d0e2de;
+    margin-bottom: 20px;
+    border: 1px solid #d0e2de;      
+}
+
+.show-item .comments-boxs .comment-box .comment-pic{text-align: center;}
+
+.show-item .comments-boxs .comment-box .comment-pic img{max-width: 100px;margin-bottom: 10px;}
+
+.show-item .comments-boxs .comment-box .comment-info { margin-top: 25px;padding: 20px 30px;}
+
+.show-item .comments-boxs .comment-box .comment-info .lead{margin-bottom: 5px;}
+
+.show-item .comments-boxs .comment-box .comment-info .lead:before{ 
+    content: "";
+    display: block;
+    left: -30px;
+    top: 5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+	border-color: transparent #a2dbcf transparent transparent;
+    border-width: 15px;
+}
+
+.comment-info .comm-date{font-size: 15px;}
+
+/*.........................................................................................*/
+/*End Items Page*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start header Page*/
+/*.........................................................................................*/
+
+@media (max-width: 768px) {
+	.upper-bar{
+		text-align: center;
+	}
+}
+
+.main-bar{padding: 10px;;margin-bottom: 20px;}
+
+.main-bar .container{padding-left: 5px;padding-right: 5px;}
+
+.main-bar .dk-logo-brand span{top: -6px;left: 12px;}
+
+.main-bar span{margin-right: 10px;}
+
+.main-bar .latest a{
+	display: inline-block;
+    padding: 10px;
+    background-color: #d0e2de;
+    border-radius: 5px;
+    text-decoration: none;   
+}
+
+/*.........................................................................................*/
+/*End header Page*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Home Page*/
+/*.........................................................................................*/
+
+.home-page{margin-top: 25px;}
+
+.home-page .category{
+    display: inline-block;
+    width: 31.04176521%;
+    padding: 5px 20px;
+    vertical-align: top;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px; 
+	background-color: #d0e2de;
+    min-height: 185px;         	
+}
+
+@media (max-width: 1200px) {
+	.home-page .category{width: 100%;min-height: unset;}
+	
+	.home-page .num-1,
+	.home-page .num-4, 
+	.home-page .num-7, 
+	.home-page .num-10, 
+	.home-page .num-13, 
+	.home-page .num-16{margin-left: unset !important;margin-right: unset !important;}
+}
+
+
+.home-page .category .parent{display: block;margin-bottom: 15px;border-bottom: 2px solid #1abc9c;}
+
+.home-page .num-1,
+.home-page .num-4,
+.home-page .num-7,
+.home-page .num-10,
+.home-page .num-13,
+.home-page .num-16{margin-left: 2.9%;margin-right: 2.9%;}
+
+.home-page .category .parent .more{
+    color: #fcfcfc;
+    top: 10px; 
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+.home-page .category .parent a{
+	text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 10px;
+	font-size: 16px;        	
+}
+
+.home-page .child{
+    font-size: 12px;
+    background-color: #ecf0f1;
+    display: inline-block;
+    padding: 4px 10px;
+	margin-bottom: 5px;
+    border-radius: 5px;	
+}
+
+/*.........................................................................................*/
+/*End Home Page*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Modal Edit*/
+/*.........................................................................................*/
+
+.modal-content{background-color: #d0e2de;}
+
+.modal-header{border-bottom: 1px solid #1abc9c;}
+
+.modal-footer{border-top: 1px solid #1abc9c;}
+
+.modal-footer .btn-default{background-color: rgb(26, 188, 156);border-color: rgb(26, 188, 156);}
+
+/*.........................................................................................*/
+/*End Modal Edit*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Footer Page*/
+/*.........................................................................................*/
+
+.footer .scroll-top{
+	width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    bottom: 15px;
+    font-size: 25px;
+    border-radius: 5px;
+    display: none;
+}
+
+.footer .scroll-top i{top: 1px;}
+
+.footer .ftr{padding: 30px;}
+
+.footer .under-ftr{background-color: #3d3d3d;padding: 15px;}
+
+/*.........................................................................................*/
+/*End Footer Page*/
+/*.........................................................................................*/
+
+/*.........................................................................................*/
+/*Start Grouping System*/
+/*.........................................................................................*/
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Droid Arabic Kufi', cursive;
+}
+
+h1, .upper-bar .user-actions i, .upper-bar span.user-not-approved, .upper-bar .login-signup:hover,
+.caret, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .login-page .forms [data-value='login'].active,
+.item-box .item-info .cat-options span:hover i, .item-box .item-info a, .profile .options,
+.profile .panel-primary>.panel-heading, .profile .information ul li i, .profile .ads .title,
+.easyPaginateNav a, .easyPaginateNav a.current, .profile .comments .comm, .show-item .unlogin-user a,
+.show-item ul li i, .show-item ul li a, .show-item .comments-boxs .comment-box,.main-bar .latest a:hover{
+	color: #1abc9c;
+}
+
+.bootstrap-tagsinput .label-info, .main-table thead td, .upper-bar img, .table-responsive .row:first-child,
+.table-responsive .row:last-child, .login-page .forms .btn-login, .item-box .item-price, .item-box .item-owner img,
+.profile .user-profile-pic img, .profile .information .edit-profile, .show-item img, .show-item .item-description,
+.show-item ul li a.tags-anchors, .show-item .add-comment .btn-primary, .main-bar, .home-page .category .parent .more,
+.footer .scroll-top, .footer .ftr{
+	background-color: #1abc9c;
+}
+
+.login-page .forms .btn-login, .profile .information .edit-profile, .show-item .add-comment .btn-primary{
+	border-color: #1abc9c;
+}
+
+.upper-bar, .upper-bar .container, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .login-page .login-form,
+.login-page .signup-form, .item-box:hover, .item-box .item-info .cat-options span:hover, .profile .options,
+.profile .panel-primary>.panel-heading, .profile .information ul li:nth-child(odd), .profile .ads .title,
+.easyPaginateNav, .easyPaginateNav a.current, .show-item ul li:nth-child(odd),
+.show-item .comments-boxs .comment-box .comment-info, .home-page .category:hover{
+	background-color: #a2dbcf; 
+}
+
+.upper-bar .login-signup, .dropdown-menu>li>a, .login-page h1, .profile .information ul li span,
+.show-item h2, .show-item h3, .show-item ul li span, .main-bar .latest a, .home-page .category .parent a, 
+.modal-header h4{
+	color: #6474a1;
+}
+
+.custom-form .btn:hover, .btn-add:hover, .main-table thead td, .main-table-actions .others .btn-delete:hover i,
+.main-table-actions .others .btn-edit:hover i, .main-table-actions .others .btn-approve:hover i,
+.upper-bar, .table-responsive .row:first-child, .table-responsive .row:last-child, .item-box .item-price,
+.item-box, .show-item .item-description .read-more:hover, .show-item ul li a.tags-anchors,
+.main-bar .dk-logo-brand, .modal-footer .btn-default, .footer .scroll-top{
+	color: #FFF;
+}
+
+.form-group .show-password i:hover, .main-table-actions .others .btn-delete:hover i,
+.main-table-actions .others .btn-edit:hover i, .main-table-actions .others .btn-approve:hover i,
+.upper-bar .session-user-profile, .upper-bar .user-actions i, .caret, .login-page .forms span, 
+.profile .options i, .profile .user-profile-pic img, .profile .item-box .item-not-approved,
+.new-item .item-box .item-image:hover, .show-item .item-description .read-more,
+.home-page .category .parent .more, .footer .scroll-top{
+	cursor: pointer;
+}
+
+.dk-logo p, .dk-logo-brand p, .success-msg i, .fail-msg i, .server-errors .alert-danger button,
+.client-errors .alert, .client-errors .alert-danger button, .btn-add i,
+.main-table-actions .others .btn-delete i, .main-table-actions .others .btn-edit i,
+.main-table-actions .others .btn-approve i, .others-msg, .nice-page .dk-logo,
+.nice-page h1, .upper-bar .user-actions, .upper-bar .dk-logo-brand, .dropdown-menu:before,
+.form-group, .login-page .forms h1, .item-box, .new-item .item-box .item-image i,
+.show-item .comments-boxs .comment-box .comment-info, .main-bar .dk-logo-brand,
+.home-page .category .parent .more, .footer .scroll-top i{
+	position: relative;
+}
+
+.overlay, .asterisk, .form-group #result, .form-group .show-password, .item-box .item-price,
+.profile .item-box .item-not-approved, .profile .item-box .waitting, .profile .item-box .waitting:before,
+.new-item .item-box .upload-icon, .show-item .comments-boxs .comment-box .comment-info .lead:before,
+.main-bar .dk-logo-brand span{
+	position: absolute;
+}
+
+.main-table td i, .main-table-actions .add, .nice-page h1, .options .option, .login-page .welcome-pic,
+.categories .row hr, .item-box .item-image, .item-box .item-info, .profile .user-profile-pic,
+.main-bar .logo, .main-bar .latest{
+	float: left;
+}
+
+.lang-options, .main-table-actions .others, .nice-page .dk-logo, .upper-bar span.user-not-approved,
+.login-page .forms, .login-page .forms form, .item-box .item-owner, .profile .comments .comm span,
+.home-page .category .parent .more{
+	float: right;
+}
+
+/*.........................................................................................*/
+/*End Grouping System*/
+/*.........................................................................................*/
